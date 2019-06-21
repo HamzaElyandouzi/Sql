@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Message {
 
     @Id//shows what the primary key will be, Id
-   // @GeneratedValue//AutoIncrement
+    @GeneratedValue//AutoIncrement
     private int id;
     private String message;
 
@@ -19,6 +19,18 @@ public class Message {
         this.message = message;
     }
 
+    /*
+    *if you want that hibernate uses your geters and setters to fill
+    *in the database and not your properties in case there is some
+    *logic in the methode's them self that need to be accesed
+    * you should place the tags above the corresponding methode's
+    * and the the properties.
+    *
+    *shows what the primary key will be, Id
+    * @Id
+    *AutoIncrement with multiple different generatedType's
+    *@GeneratedValue(generatedType's)
+    */
     public int getId() {
         return id;
     }
