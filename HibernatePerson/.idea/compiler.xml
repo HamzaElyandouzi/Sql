@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HibernaetPerson" />
+        <module name="hibernatePerson" />
       </profile>
     </annotationProcessing>
   </component>
